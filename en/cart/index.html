@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!-- Mirrored from www.instant-gaming.com/en/cart/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Nov 2022 21:18:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"548e8d9732",applicationID:"6048502"};/*! For license information please see nr-loader-rum-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return c},Mt:function(){return u}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"config")}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=function(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}(t);if(n){for(var r=e.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return w},s:function(){return x}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),v=n(4168),p=window.sessionStorage,h="NRBA_SESSION_ID";var g=n(1476),y=window.XMLHttpRequest,m=y&&y.prototype,b={};function w(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!b[t])throw new Error("Runtime for "+t+" was never set");return b[t]}function x(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;b[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=p.getItem(h))&&(a=(0,v.ky)(16),p.setItem(h,a)),a):"0",xhrWrappable:y&&m&&m.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,b[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return o}});var r={agentIdentifier:""},o=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],o=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=o)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var o={},u={},l={},v={on:g,addEventListener:g,removeEventListener:y,emit:h,get:b,listeners:m,context:p,buffer:w,abort:d,aborted:!1,isBuffering:x,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return v;function p(t){return t&&t instanceof s?t:t?(0,i.X)(t,c,f):f()}function h(t,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){e&&a&&e.emit(t,n,o);for(var c=p(o),s=m(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=O()[u[t]];return l&&l.push([v,t,n,c]),c}}function g(t,e){o[t]=m(t).concat(e)}function y(t,e){var n=o[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return o[t]||[]}function b(e){return l[e]=l[e]||t(v,e)}function w(t,e){var n=O();v.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function x(t){return!!O()[u[t]]}function O(){return v.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(t,e,n,o,i){i?(i.buffer([t],o),i.emit(t,e,n)):(r.buffer([t],o),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(t,e,n,i){a(i||r.E,o,t,e,n)}function a(t,e,n,o,i){i||(i="feature"),t||(t=r.E);var a=e[i]=e[i]||{};(a[n]=a[n]||[]).push([t,o])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(t){}function i(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<t;i++)o.push(a().toString(16));return o.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Rl:function(){return r},ky:function(){return o}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(t){i=t}function s(){return i}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,o,i,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();e&&((0,o.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[t]=o[t]||{},o[t][e]=n}function a(t,e,n,r){var i,a,c=t.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var t=i(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return i.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,o.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return o}});var r=n(1776),o=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(t){}return t[e]=o,o}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var o=e[r].regex,i=e[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),i.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=t[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=i();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((o={})[n]=e,o)),a)),c}function u(t,e){i()[t]=e}function s(){var t,e;return t=i(),e=t.info||{},t.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},e),function(){var t=i(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=i(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),i()}},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}}},r={};function o(t){var e=r[t];if(void 0!==e)return e.exports;var i=r[t]={exports:{}};return n[t](i,i.exports,o),i.exports}o.m=n,o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.f={},o.e=function(t){return Promise.all(Object.keys(o.f).reduce((function(e,n){return o.f[n](t,e),e}),[]))},o.u=function(t){return t+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",o.l=function(n,r,i,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",e+i),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(v);var o=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(t){return t(r)})),e)return e(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var t={299:0,82:0};o.f.j=function(e,n){var r=o.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=t[e]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(e),c=new Error;o.l(a,(function(n){if(o.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(e&&e(n);s<a.length;s++)i=a[s],o.o(t,i)&&t[i]&&t[i][0](),t[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var t=o(9034),e=o(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=o(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof l?e:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return P()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=x(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function v(){}function p(){}var h={};c(h,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(_([])));y&&y!==e&&n.call(y,o)&&(h=y);var m=p.prototype=l.prototype=Object.create(h);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function _(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return v.prototype=p,c(m,"constructor",p),c(p,"constructor",v),v.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}var l=0;function v(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,o){var i=e.apply(t,n);function a(t){d(i,r,o,a,c,"next",t)}function c(t){d(i,r,o,a,c,"throw",t)}a(void 0)}))})()}var p=o(8539),h=o.n(p),g=o(1424),y=o(1220),m=o(441),b=o(7361),w=o(357),x=o(6959);var O=o(1476),E=o(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};var P=!1;var A=o(6972),k=o(1793),L=o(5023);function S(t,e){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},S(t,e)}var T,C,I,R=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,k.v)(e),(0,A.B)(e,"firstbyte",(0,x.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,S(e,n);var o=r.prototype;return o.measureWindowLoaded=function(){var t=(0,x.zO)();(0,A.B)(this.agentIdentifier,"onload",t+(0,x.os)()),(0,b.p)("timing",["load",t],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,A.B)(this.agentIdentifier,"domContent",(0,x.zO)()+(0,x.os)())},r}(L.W);void 0!==document.hidden?(T="hidden",C="visibilitychange",I="visibilityState"):void 0!==document.msHidden?(T="msHidden",C="msvisibilitychange"):void 0!==document.webkitHidden&&(T="webkitHidden",C="webkitvisibilitychange",I="webkitVisibilityState");var M=o(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var D=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return o=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&C&&document.addEventListener(C,(function(){I&&document[I]?o(document[I]):document[T]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,O.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,b.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,b.p)("cls",[t],void 0,void 0,e.ee)}))},i.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},i.captureInteraction=function(t){if(t instanceof M.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,x.zO)()?n.fid=(0,x.zO)()-e:e>(0,x.os)()&&e<=Date.now()?(e-=(0,x.os)(),n.fid=(0,x.zO)()-e):e=(0,x.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,x.zO)(),(0,b.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(L.W),q=o(3350),B="React",z="Angular",G="AngularJS",H="Backbone",F="Ember",V="Vue",Z="Meteor",U="Zepto",X="Jquery";function Q(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(B),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(G),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(z),window.Backbone&&t.push(H),window.Ember&&t.push(F),window.Vue&&t.push(V),window.Meteor&&t.push(Z),window.Zepto&&t.push(U),window.jQuery&&t.push(X)}catch(t){}return t}var W=o(7299),K=o(603),Y=o(158);function J(t,e){return J=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},J(t,e)}var $=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,J(e,n);var o=r.prototype;return o.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,b.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,b.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+Y.q+"/Detected"),u((function(){Q().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(L.W),tt=o(847);new Promise((function(e,n){if(P)e(P);else{var r=(0,g.gG)();try{(0,m.L)(t.Z,r.info),(0,O.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,y.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,w.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(o,n,!0,"api")})),e.addPageAction=u(o,"addPageAction",!0),e.setCurrentRouteName=u(o,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,y.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(o,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,i=(0,m.C)(t);return(0,m.L)(t,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[e]=n,r))})),u(o,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var o={},i=this,a="function"==typeof e;return(0,b.p)("api-ixn-tracer",[(0,x.zO)(),t,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,x.zO)(),i,a],o),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],o),t}finally{r.emit("fn-end",[(0,x.zO)()],o)}}}};function u(t,e,r,o){return function(){return(0,b.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,b.p)(t+e,[(0,x.zO)()].concat(h()(arguments)),r?null:this,o,n),r?void 0:this}}(0,w.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(i,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,b.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,b.p)("err",[t,(0,x.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(P=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,o=(0,tt.K)(t.Z);o.page_view_event&&new R(t.Z),o.page_view_timing&&new D(t.Z),o.metrics&&new $(t.Z),e="lite",n?setTimeout((function(){return v(e)}),r||1e3):c((function(){return v(e)}))}))}(),i}()}));</script>
+<title>Cart</title>
+<meta name="robots" content="index,follow,all" />
+<meta name="description" content="cart" />
+<meta name="keywords" content="cart" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="google-signin-clientid" content="838762527992-af3vk70ipe4m8501kl7695adctrm1vc7.apps.googleusercontent.com" />
+<meta name="ig-usid" content="1d9e57a33eb747f6b21a33cb7fab6742" />
+<meta name="format-detection" content="telephone=no" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1" />
+<link rel="shortcut icon" type="image/png" href="https://www.instant-gaming.com/favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.instant-gaming.com/apple-touch-icon.png" />
+<link rel="android-touch-icon" href="https://www.instant-gaming.com/apple-touch-icon.png" />
+
+<link rel="preload" href="https://www.instant-gaming.com/themes/igv2/fonts/proximanova-regular.woff" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="https://www.instant-gaming.com/themes/igv2/fonts/proximanova-bold.woff" as="font" type="font/woff2" crossorigin />
+<link href="https://s1.gaming-cdn.com/" rel="preconnect" crossorigin />
+<link href="https://s2.gaming-cdn.com/" rel="preconnect" crossorigin />
+<link href="https://s3.gaming-cdn.com/" rel="preconnect" crossorigin />
+<link href="../../themes/igv2/assets/style10fe.css?v=1668793847" rel="stylesheet" type="text/css" />
+<script defer src="../../tools/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script defer src="../../themes/igv2/js/vue.min.js"></script>
+<script type="text/javascript">
+            function lazyLoadImage(item) {
+                const image = new Image();
+                const src = item.getAttribute('data-src');
+
+                if (null === src) {
+                    return;
+                }
+
+                item.onload = null;
+                image.src = src;
+
+                image.onload = function () {
+                    item.setAttribute('src', src);
+                };
+            }
+
+            function defer(fn) {
+                window.addEventListener('DOMContentLoaded', fn);
+            }
+
+            window.URLS = {
+                'WEB': 'https://www.instant-gaming.com',
+                'CDN': 'https://s{ id }.gaming-cdn.com/'
+            };
+            window.isMobile = false;
+            window.isUAG = false;
+            window.isIOS = false;
+            window.user = {
+                lang: 'en',
+                isAuthenticated: false,
+                                currency: {
+                    label: 'NOK',
+                    format: '%s kr',
+                    symbol: 'NOK',
+                    rate: 10.545321558
+                }
+            };
+            window.c = {"EUR":{"r":"1.000000000"},"USD":{"r":"1.034549825"},"GBP":{"r":"0.869734658"},"DKK":{"r":"7.453414221"},"CHF":{"r":"0.987236758"},"BRL":{"r":"5.569188623"},"CAD":{"r":"1.387900319"},"RSD":{"r":"117.319972812"},"CZK":{"r":"24.399857645"},"AUD":{"r":"1.549910821"},"SEK":{"r":"11.003885769"},"PLN":{"r":"4.708908715"},"NOK":{"r":"10.545321558"},"AED":{"r":"3.799901510"}};window.globalLangs = {"_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_FUTURE_":"in %s","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_PAST_":"%s ago","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_SECOND_":"a few seconds","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_SECONDS_":"%d seconds","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_MINUTE_":"a minute","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_MINUTES_":"%d minutes","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_HOUR_":"an hour","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_HOURS_":"%d hours","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_DAY_":"a day","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_DAYS_":"%d days","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_WEEK_":"a week","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_WEEKS_":"%d weeks","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_MONTH_":"a month","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_MONTHS_":"%d months","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_YEAR_":"a year","_LANGUAGES_HUMAN_READABLE_RELATIVE_DATE_YEARS_":"%d years","_LANGUAGES_DATE_MONTH_JANUARY_":"January","_LANGUAGES_DATE_MONTH_FEBRUARY_":"February","_LANGUAGES_DATE_MONTH_MARCH_":"March","_LANGUAGES_DATE_MONTH_APRIL_":"April","_LANGUAGES_DATE_MONTH_MAY_":"May","_LANGUAGES_DATE_MONTH_JUNE_":"June","_LANGUAGES_DATE_MONTH_JULY_":"July","_LANGUAGES_DATE_MONTH_AUGUST_":"August","_LANGUAGES_DATE_MONTH_SEPTEMBER_":"September","_LANGUAGES_DATE_MONTH_OCTOBER_":"October","_LANGUAGES_DATE_MONTH_NOVEMBER_":"November","_LANGUAGES_DATE_MONTH_DECEMBER_":"December","_LANGUAGES_DATE_MONTH_JANUARY_SHORT_":"Jan.","_LANGUAGES_DATE_MONTH_FEBRUARY_SHORT_":"Feb.","_LANGUAGES_DATE_MONTH_MARCH_SHORT_":"Mar.","_LANGUAGES_DATE_MONTH_APRIL_SHORT_":"Apr.","_LANGUAGES_DATE_MONTH_MAY_SHORT_":"May","_LANGUAGES_DATE_MONTH_JUNE_SHORT_":"June","_LANGUAGES_DATE_MONTH_JULY_SHORT_":"July","_LANGUAGES_DATE_MONTH_AUGUST_SHORT_":"Aug.","_LANGUAGES_DATE_MONTH_SEPTEMBER_SHORT_":"Sep.","_LANGUAGES_DATE_MONTH_OCTOBER_SHORT_":"Oct.","_LANGUAGES_DATE_MONTH_NOVEMBER_SHORT_":"Nov.","_LANGUAGES_DATE_MONTH_DECEMBER_SHORT_":"Dec.","_LANGUAGES_DATE_DAY_MONDAY_":"Monday","_LANGUAGES_DATE_DAY_TUESDAY_":"Tuesday","_LANGUAGES_DATE_DAY_WEDNESDAY_":"Wednesday","_LANGUAGES_DATE_DAY_THURSDAY_":"Thursday","_LANGUAGES_DATE_DAY_FRIDAY_":"Friday","_LANGUAGES_DATE_DAY_SATURDAY_":"Saturday","_LANGUAGES_DATE_DAY_SUNDAY_":"Sunday","_LANGUAGES_DATE_DAY_MONDAY_SHORT_":"Mon.","_LANGUAGES_DATE_DAY_TUESDAY_SHORT_":"Tue.","_LANGUAGES_DATE_DAY_WEDNESDAY_SHORT_":"Wed.","_LANGUAGES_DATE_DAY_THURSDAY_SHORT_":"Thu.","_LANGUAGES_DATE_DAY_FRIDAY_SHORT_":"Fri.","_LANGUAGES_DATE_DAY_SATURDAY_SHORT_":"Sat.","_LANGUAGES_DATE_DAY_SUNDAY_SHORT_":"Sun.","_MENU_PREORDER_PANEL_AVAILABLE_IN_X_DAYS_":"In %d days","_MENU_PREORDER_PANEL_AVAILABLE_TOMORROW_":"Tomorrow","_MENU_PREORDER_PANEL_AVAILABLE_TODAY_":"Today","_MENU_PREORDER_PANEL_AVAILABLE_YESTERDAY_":"Yesterday","_LANGUAGES_PRODUCT_BADGE_PREORDER_":"Pre-order","_LANGUAGES_PRODUCT_BADGE_BLACK_FRIDAY_":"Black Friday selection","_URL_BUY_":"buy"};window.langs = { };             
+        </script>
+<script defer src="../../min/ig-igv2-js10fe.js?v=1668793847" type="text/javascript"></script> <script defer src="../../min/ig-igv2-js-cartPage10fe.js?v=1668793847" type="text/javascript"></script>
+
+<script>
+                var dataLayer = [];
+                                 dataLayer.push({ 'countryCode': 'EG' });
+                
+                
+                (function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({ 'gtm.start': new Date().getTime(),event:'gtm.js' }); var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K27NW62');
+
+                
+                dataLayer.push({ 'event': 'done' });
+            </script>
+<meta property="og:title" content="Cart" />
+<meta property="twitter:title" content="Cart" />
+<meta property="og:site_name" itemprop="name" content="Instant-Gaming.com" />
+<meta property="twitter:site" content="@InstantGamingEN" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:creator" content="@InstantGamingEN" />
+<meta property="og:image" content="https://www.instant-gaming.com/themes/igv2/images/opengraph.png" />
+<meta property="og:image:alt" content="Instant-Gaming banner" />
+<meta property="twitter:image" content="https://www.instant-gaming.com/themes/igv2/images/opengraph.png" />
+<meta property="twitter:image:alt" content="Instant-Gaming banner" />
+<meta property="fb:app_id" content="252070411609330" />
+<link rel="alternate" hreflang="fr" href="https://www.instant-gaming.com/fr/panier/" />
+<link rel="alternate" hreflang="en" href="index.html" />
+<link rel="alternate" hreflang="de" href="https://www.instant-gaming.com/de/warenkorb/" />
+<link rel="alternate" hreflang="es" href="https://www.instant-gaming.com/es/cesta/" />
+<link rel="alternate" hreflang="it" href="https://www.instant-gaming.com/it/carrello/" />
+<link rel="alternate" hreflang="pt" href="https://www.instant-gaming.com/pt/carrinho/" />
+<link rel="alternate" hreflang="da" href="https://www.instant-gaming.com/da/vogn/" />
+<link rel="alternate" hreflang="nl" href="https://www.instant-gaming.com/nl/winkelwagen/" />
+<link rel="alternate" hreflang="pl" href="https://www.instant-gaming.com/pl/koszyk/" />
+<link rel="alternate" hreflang="ru" href="https://www.instant-gaming.com/ru/cart/" />
+<link rel="alternate" hreflang="uk" href="https://www.instant-gaming.com/ua/cart/" />
+</head>
+<body class="
+            ig-currency-big            act-cartPage
+            ct-EG
+                                                                                                            forced                                            ">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K27NW62" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="top-marker"></div>
+<header class="header-container">
+<a href="https://www.instant-gaming.com/" class="logo-ig logo-m"></a>
+<div class="progress-steps">
+<span class="step active">
+<span class="number">1</span>
+<span class="text">Shopping cart</span>
+<span class="spacer"></span>
+</span>
+<span class="step ">
+<span class="number">2</span>
+<span class="text">Payment</span>
+<span class="spacer"></span>
+</span>
+<span class="step">
+<span class="number">3</span>
+<span class="text last">Game activation</span>
+</span>
+</div>
+<div class="secure">
+<div class="icon-security icon-m"></div>
+<div class="text">
+<span class="secured">Secure payment</span>
+<span class="ssl">256-bit SSL Secured</span>
+</div>
+</div>
+</header>
+<div class="main-content">
+<div class="cartpage-container" id="cartpage-app" v-cloak>
+<div class="cartpage-left">
+<div class="cartpage-section">
+<h2>Cart</h2>
+<div class="cart-listing">
+<div class="cart-empty" v-if="items.length == 0">
+<div class="icon-cart icon-xxl"></div>
+<h2 class="title">Your cart is empty</h2>
+<span class="content">You didn't add any item in your cart yet. Browse the website to find amazing deals!</span>
+<a class="button button-secondary" href="../search/index.html">Discover games</a>
+</div>
+<div v-for="item in items" class="cart-item">
+<div class="item-container">
+<a class="cover" :href="item.product | product_url">
+<picture>
+<img :data-src="item.product_id | product_cover_url('250x143', item.product.updated_at)" :key="item.product_id" :alt="item.product.name" src="https://www.instant-gaming.com/themes/igv2/images/lazy.svg" loading="lazy" @load="lazyLoadImage($event.target)" />
+</picture>
+</a>
+<div class="information">
+<div class="name"><span v-if="item.product.is_dlc" class="dlc">DLC</span><span class="title">%% item.product.name %%</span></div>
+<div class="type">%% item.product.type %%</div>
+<div v-if="item.product.preorder" class="date">
+<span class="preorder">Pre-order</span>
+<span class="details"><span>Delivery </span>%% item.product.avail_date > 3000 ? $options.filters.hdate(item.product.avail_date) : item.product_avail_date %%</span>
+</div>
+<div class="actions">
+<a href="#" class="deleteItem" @click.prevent="deleteItem(item)">
+<div class="icon-delete icon-xs"></div>
+</a>
+<a href="#" class="moveToWishlist" @click.prevent="moveToWishlist(item)">Move to Wishlist</a>
+</div>
+</div>
+<select2 class="wide" v-model="item.quantity" @before-change="updateItemQuantity(item, $event)">
+<option value="0" disabled>0</option>
+<option v-for="qty in item.max_quantity" :value="qty">%% qty %%</option>
+</select2>
+<div class="price" v-html="$options.filters.currency_convert(item.product.price)"></div>
+</div>
+<div class="warnings alerts warning" v-if="hasWarnings(item)">
+<div v-for="(message, key) in item.product.warnings" :class="key">%% message %%</div>
+</div>
+</div>
+</div>
+</div>
+<div class="separator" v-if="recommendedItems.length > 0"></div>
+<div class="cartpage-section wishlist" v-if="recommendedItems.length > 0">
+<h2>Recommended</h2>
+<div class="cartpage-listing">
+<div v-for="item in recommendedItems" class="listing-item">
+<a class="cover" :href="item | product_url">
+<picture>
+<img :data-src="item.prod_id | product_cover_url('250x143', item.updated_at)" :key="item.name" :alt="item.name" src="https://www.instant-gaming.com/themes/igv2/images/lazy.svg" loading="lazy" @load="lazyLoadImage($event.target)" />
+</picture>
+</a>
+<div class="information">
+<div class="name">%% item.name %%</div>
+<div class="type">%% item.type %%</div>
+<div class="price" v-html="$options.filters.currency_convert(item.price)"></div>
+</div>
+<a href="#" class="addtocart" @click.prevent="addRelatedItemToCart(item)">
+<span>Move to cart</span>
+<div class="icon-arrow2 icon-xxs"></div>
+</a>
+</div>
+</div>
+</div>
+<div class="separator" v-if="wishlistItems.length > 0"></div>
+<div class="cartpage-section wishlist" v-if="wishlistItems.length > 0">
+<h2>Wishlist</h2>
+<div class="cartpage-listing">
+<div v-for="item in wishlistItems" class="listing-item">
+<a class="cover" :href="item | product_url">
+<picture>
+<img :data-src="item.prod_id | product_cover_url('250x143', item.updated_at)" :key="item.name" :alt="item.name" src="https://www.instant-gaming.com/themes/igv2/images/lazy.svg" loading="lazy" @load="lazyLoadImage($event.target)" />
+</picture>
+</a>
+<div class="information">
+<div class="name">%% item.name %%</div>
+<div class="type">%% item.type %%</div>
+<div class="price" v-html="$options.filters.currency_convert(item.price)"></div>
+</div>
+<a href="#" class="addtocart" @click.prevent="addRelatedItemToCart(item, true)">
+<span>Move to cart</span>
+<div class="icon-arrow2 icon-xxs"></div>
+</a>
+ </div>
+</div>
+</div>
+</div>
+<div :class="['cartpage-right', { 'cartpage-empty': items.length == 0 }]">
+<h2>Summary</h2>
+<div class="cart-summary">
+<div class="summary-row">
+<span>Official price</span>
+<span v-html="$options.filters.currency_convert(retailSummary)"></span>
+</div>
+<div class="summary-row">
+<span>Discount</span>
+<span v-html="$options.filters.currency_convert(-discountSummary)"></span>
+</div>
+<div class="summary-row">
+<span>Subtotal</span>
+<span v-html="$options.filters.currency_convert(subtotal)"></span>
+</div>
+<a :href="items.length > 0 ? `https://www.instant-gaming.com/en/payment/` : '#'" :class="[
+                        'button',
+                        'gotopayment',
+                        { 'button-disabled': !canRedirectToPayment() }
+                    ]" @click="canRedirectToPayment($event)">
+Go to payment
+<div class="icon-arrow icon-xxs"></div>
+</a>
+<span class="choice">or</span>
+<a href="https://www.instant-gaming.com/" class="back">
+<div class="icon-arrow icon-xxs"></div>
+Continue shopping
+</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        window.cart = {
+            items: [{"user_id":null,"product_id":12953,"quantity":1,"product":{"price":"34.49","retail":"49.99","avail_date":1668729600,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1668792960,"prod_id":12953,"video_preview_updated_at":1668772926,"discount":null,"name":"Marvel\u2019s Spider-Man: Miles Morales","seo_name":"marvel-s-spider-man-miles-morales-pc-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":12827,"quantity":1,"product":{"price":"62.99","retail":"79.99","avail_date":1666915200,"region":"","type":"Microsoft Store","is_dlc":false,"preorder":false,"updated_at":1666104185,"prod_id":12827,"video_preview_updated_at":1663603638,"discount":null,"name":"Call of Duty: Modern Warfare II Cross-Gen Bundle (Xbox ONE \/ Xbox Series X|S)","seo_name":"call-of-duty-modern-warfare-ii-cross-gen-bundle-xbox-one-xbox-series-x-s-cross-gen-bundle-xbox-one-xbox-series-x-s-game-microsoft-store","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":12528,"quantity":1,"product":{"price":"13.49","retail":"19.99","avail_date":1668470400,"region":"","type":"Steam","is_dlc":true,"preorder":false,"updated_at":1668532857,"prod_id":12528,"video_preview_updated_at":1668528343,"discount":null,"name":"Farming Simulator 22 - Platinum Expansion","seo_name":"farming-simulator-22-platinum-expansion-pc-mac-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":10545,"quantity":1,"product":{"price":"51.49","retail":"69.99","avail_date":1664496000,"region":"","type":"Origin","is_dlc":false,"preorder":false,"updated_at":1665157647,"prod_id":10545,"video_preview_updated_at":1666702746,"discount":null,"name":"FIFA 23","seo_name":"fifa-23-pc-game-origin","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":12527,"quantity":1,"product":{"price":"27.49","retail":"39.99","avail_date":1668470400,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1668516458,"prod_id":12527,"video_preview_updated_at":1668528343,"discount":null,"name":"Farming Simulator 22 Platinum Edition","seo_name":"farming-simulator-22-platinum-edition-platinum-edition-pc-mac-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":761,"quantity":1,"product":{"price":"28.00","retail":"49.99","avail_date":1666656000,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1666707812,"prod_id":761,"video_preview_updated_at":1657033055,"discount":null,"name":"Mount & Blade II: Bannerlord","seo_name":"mount-and-blade-ii-bannerlord-pc-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":13109,"quantity":1,"product":{"price":"25.49","retail":"46.01","avail_date":1667433600,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1668068988,"prod_id":13109,"video_preview_updated_at":1667990441,"discount":null,"name":"WRC Generations Fully Loaded Edition","seo_name":"wrc-generations-fully-loaded-edition-fully-loaded-edition-pc-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":8877,"quantity":1,"product":{"price":"31.99","retail":"49.99","avail_date":1666656000,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1666774187,"prod_id":8877,"video_preview_updated_at":1663602467,"discount":null,"name":"Victoria 3","seo_name":"victoria-3-pc-mac-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":5773,"quantity":1,"product":{"price":"1.59","retail":"4.99","avail_date":1558393946,"region":"","type":"Steam","is_dlc":true,"preorder":false,"updated_at":1608049517,"prod_id":5773,"video_preview_updated_at":1668591166,"discount":null,"name":"Cities: Skylines - Content Creator Pack: University City","seo_name":"game-steam-cities-skylines-content-creator-pack-university-city","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":4012,"quantity":1,"product":{"price":"1.98","retail":"9.99","avail_date":1302217157,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1650899116,"prod_id":4012,"video_preview_updated_at":1657236785,"discount":null,"name":"Darkest Hour: A Hearts of Iron Game","seo_name":"darkest-hour-a-hearts-of-iron-game-pc-game-steam","warnings":[]},"max_quantity":4},{"user_id":null,"product_id":1912,"quantity":1,"product":{"price":"7.29","retail":"59.99","avail_date":1548891813,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1649236103,"prod_id":1912,"video_preview_updated_at":1657030165,"discount":null,"name":"Ace Combat 7: Skies Unknown","seo_name":"ace-combat-7-skies-unknown-pc-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":6512,"quantity":1,"product":{"price":"10.27","retail":"39.99","avail_date":1550103454,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1651160153,"prod_id":6512,"video_preview_updated_at":1657406504,"discount":null,"name":"Metro Exodus Gold Edition","seo_name":"metro-exodus-gold-edition-gold-edition-pc-game-steam","warnings":[]},"max_quantity":10},{"user_id":null,"product_id":5617,"quantity":1,"product":{"price":"2.99","retail":"19.99","avail_date":1571267471,"region":"","type":"Steam","is_dlc":false,"preorder":false,"updated_at":1651503461,"prod_id":5617,"video_preview_updated_at":1657057579,"discount":null,"name":"Autonauts","seo_name":"autonauts-pc-game-steam","warnings":[]},"max_quantity":10}],
+            wishlist: [],
+            recommended: [{"prod_id":"13103","name":"FIFA 23: 500 FUT Points","type":"Origin","price":"4.79","seo_name":"fifa-23-500-fut-points-500-fut-pc-game-origin","updated_at":"1666706824","is_dlc":"1","preorder":"0"},{"prod_id":"13102","name":"FIFA 23: 1050 FUT Points","type":"Origin","price":"8.99","seo_name":"fifa-23-1050-fut-points-1050-fut-pc-game-origin","updated_at":"1666699423","is_dlc":"1","preorder":"0"},{"prod_id":"13065","name":"FIFA 23: 1600 FUT Points","type":"Origin","price":"12.99","seo_name":"fifa-23-1600-fut-points-1600-fut-pc-game-origin","updated_at":"1666698423","is_dlc":"1","preorder":"0"}]
+        };
+        window.canGoToPayment = true;
+    </script>
+</div>
+<div class="separator wide"></div>
+<footer class="
+        footer-container
+                    ">
+<div class="content">
+<div class="information">
+<div class="trustpilot-container">
+<div class="trustpilot">
+<div class="trustpilot-logo"></div>
+<div class="trustpilot-stars"></div>
+</div>
+<div class="text">Instant Gaming rated <span>4.7</span> out of 5, based on <u>539,719 reviews</u></div>
+</div>
+<div class="geo-selected">
+<div class="icon-location icon-xs"></div>
+<span class="country">
+English </span>
+<span class="currency">NOK</span>
+</div>
+<div class="languages-footer" id="languages-footer">
+<div class="tab-content-settings user-profile-settings-language user-geo">
+<span class="settings-title">Language and currency</span>
+<div class="region-select">
+<div class="limiter">
+<span class="text">From which country or region you want to view specific products?<br></span>
+<div class="callers">
+<select id="" class="selectable2 searchable settings-user-region">
+<option value="AF">
+Afghanistan
+</option>
+<option value="AX">
+Aland Islands
+</option>
+<option value="AL">
+Albania
+</option>
+<option value="DZ">
+Algeria
+</option>
+<option value="AS">
+American Samoa
+</option>
+<option value="AD">
+Andorra
+</option>
+<option value="AO">
+Angola
+</option>
+<option value="AI">
+Anguilla
+</option>
+<option value="AQ">
+Antarctica
+</option>
+<option value="AG">
+Antigua and Barbuda
+</option>
+<option value="AR">
+Argentina
+</option>
+<option value="AM">
+Armenia
+</option>
+<option value="AW">
+Aruba
+</option>
+<option value="AU">
+Australia
+</option>
+<option value="AT">
+Austria
+</option>
+<option value="AZ">
+Azerbaijan
+</option>
+<option value="BS">
+Bahamas
+</option>
+<option value="BH">
+ Bahrain
+</option>
+<option value="BD">
+Bangladesh
+</option>
+<option value="BB">
+Barbados
+</option>
+<option value="BY">
+Belarus
+</option>
+<option value="BE">
+Belgium
+</option>
+<option value="BZ">
+Belize
+</option>
+<option value="BJ">
+Benin
+</option>
+<option value="BM">
+Bermuda
+</option>
+<option value="BT">
+Bhutan
+</option>
+<option value="BO">
+Bolivia
+</option>
+<option value="BA">
+Bosnia and Herzegovina
+</option>
+<option value="BW">
+Botswana
+</option>
+<option value="BV">
+Bouvet Island
+</option>
+<option value="BR">
+Brazil
+</option>
+<option value="BQ">
+British Antarctic Territory
+</option>
+<option value="IO">
+British Indian Ocean Territory
+</option>
+<option value="VG">
+British Virgin Islands
+</option>
+<option value="BN">
+Brunei
+</option>
+<option value="BG">
+Bulgaria
+</option>
+<option value="BF">
+Burkina Faso
+</option>
+<option value="BI">
+Burundi
+</option>
+<option value="KH">
+Cambodia
+</option>
+<option value="CM">
+Cameroon
+</option>
+<option value="CA">
+Canada
+</option>
+<option value="CV">
+Cape Verde
+</option>
+<option value="KY">
+Cayman Islands
+</option>
+<option value="CF">
+Central African Republic
+</option>
+<option value="TD">
+Chad
+</option>
+<option value="CL">
+Chile
+</option>
+<option value="CN">
+China
+</option>
+ <option value="CX">
+Christmas Island
+</option>
+<option value="CC">
+Cocos [Keeling] Islands
+</option>
+<option value="CO">
+Colombia
+</option>
+<option value="KM">
+Comoros
+</option>
+<option value="CG">
+Congo - Brazzaville
+</option>
+<option value="CD">
+Congo - Kinshasa
+</option>
+<option value="CK">
+Cook Islands
+</option>
+<option value="CR">
+Costa Rica
+</option>
+<option value="HR">
+Croatia
+</option>
+<option value="CU">
+Cuba
+</option>
+<option value="CY">
+Cyprus
+</option>
+<option value="CZ">
+Czech Republic
+</option>
+<option value="CI">
+Côte d’Ivoire
+</option>
+<option value="DK">
+Denmark
+</option>
+<option value="DJ">
+Djibouti
+</option>
+<option value="DM">
+Dominica
+</option>
+<option value="DO">
+Dominican Republic
+</option>
+<option value="EC">
+Ecuador
+</option>
+<option value="EG" selected>
+Egypt
+</option>
+<option value="SV">
+El Salvador
+</option>
+<option value="GQ">
+Equatorial Guinea
+</option>
+<option value="ER">
+Eritrea
+</option>
+<option value="EE">
+Estonia
+</option>
+<option value="ET">
+Ethiopia
+</option>
+<option value="FK">
+Falkland Islands
+</option>
+<option value="FO">
+Faroe Islands
+</option>
+<option value="FJ">
+Fiji
+</option>
+<option value="FI">
+Finland
+</option>
+<option value="FR">
+France
+</option>
+<option value="GF">
+French Guiana
+</option>
+<option value="PF">
+French Polynesia
+</option>
+<option value="TF">
+French Southern Territories
+</option>
+<option value="GA">
+Gabon
+</option>
+<option value="GM">
+Gambia
+</option>
+<option value="GE">
+Georgia
+</option>
+<option value="DE">
+Germany
+</option>
+<option value="GH">
+Ghana
+</option>
+<option value="GI">
+Gibraltar
+</option>
+<option value="GR">
+Greece
+</option>
+<option value="GL">
+Greenland
+</option>
+<option value="GD">
+Grenada
+</option>
+<option value="GP">
+Guadeloupe
+</option>
+<option value="GU">
+Guam
+</option>
+<option value="GT">
+Guatemala
+</option>
+<option value="GG">
+Guernsey
+</option>
+<option value="GN">
+Guinea
+</option>
+<option value="GW">
+Guinea-Bissau
+</option>
+<option value="GY">
+Guyana
+</option>
+<option value="HT">
+Haiti
+</option>
+<option value="HM">
+Heard Island and McDonald Islands
+</option>
+<option value="HN">
+Honduras
+</option>
+<option value="HK">
+Hong Kong SAR China
+</option>
+<option value="HU">
+Hungary
+</option>
+<option value="IS">
+Iceland
+</option>
+<option value="IN">
+India
+</option>
+<option value="ID">
+Indonesia
+</option>
+<option value="IR">
+Iran
+</option>
+<option value="IQ">
+Iraq
+</option>
+<option value="IE">
+Ireland
+</option>
+<option value="IM">
+ Isle of Man
+</option>
+<option value="IL">
+Israel
+</option>
+<option value="IT">
+Italy
+</option>
+<option value="JM">
+Jamaica
+</option>
+<option value="JP">
+Japan
+</option>
+<option value="JE">
+Jersey
+</option>
+<option value="JO">
+Jordan
+</option>
+<option value="KZ">
+Kazakhstan
+</option>
+<option value="KE">
+Kenya
+</option>
+<option value="KI">
+Kiribati
+</option>
+<option value="KW">
+Kuwait
+</option>
+<option value="KG">
+Kyrgyzstan
+</option>
+<option value="LA">
+Laos
+</option>
+<option value="LV">
+Latvia
+</option>
+<option value="LB">
+Lebanon
+</option>
+<option value="LS">
+Lesotho
+</option>
+<option value="LR">
+Liberia
+</option>
+<option value="LY">
+Libya
+</option>
+<option value="LI">
+Liechtenstein
+</option>
+<option value="LT">
+Lithuania
+</option>
+<option value="LU">
+Luxembourg
+</option>
+<option value="MO">
+Macau SAR China
+</option>
+<option value="MK">
+Macedonia
+</option>
+<option value="MG">
+Madagascar
+</option>
+<option value="MW">
+Malawi
+</option>
+<option value="MY">
+Malaysia
+</option>
+<option value="MV">
+Maldives
+</option>
+<option value="ML">
+Mali
+</option>
+<option value="MT">
+Malta
+</option>
+<option value="MH">
+Marshall Islands
+</option>
+<option value="MQ">
+ Martinique
+</option>
+<option value="MR">
+Mauritania
+</option>
+<option value="MU">
+Mauritius
+</option>
+<option value="YT">
+Mayotte
+</option>
+<option value="MX">
+Mexico
+</option>
+<option value="FM">
+Micronesia
+</option>
+<option value="MD">
+Moldova
+</option>
+<option value="MC">
+Monaco
+</option>
+<option value="MN">
+Mongolia
+</option>
+<option value="ME">
+Montenegro
+</option>
+<option value="MS">
+Montserrat
+</option>
+<option value="MA">
+Morocco
+</option>
+<option value="MZ">
+Mozambique
+</option>
+<option value="MM">
+Myanmar [Burma]
+</option>
+<option value="NA">
+Namibia
+</option>
+<option value="NR">
+Nauru
+</option>
+<option value="NP">
+Nepal
+</option>
+<option value="NL">
+Netherlands
+</option>
+<option value="AN">
+Netherlands Antilles
+</option>
+<option value="NC">
+New Caledonia
+</option>
+<option value="NZ">
+New Zealand
+</option>
+<option value="NI">
+Nicaragua
+</option>
+<option value="NE">
+Niger
+</option>
+<option value="NG">
+Nigeria
+</option>
+<option value="NU">
+Niue
+</option>
+<option value="NF">
+Norfolk Island
+</option>
+<option value="KP">
+North Korea
+</option>
+<option value="MP">
+Northern Mariana Islands
+</option>
+<option value="NO">
+Norway
+</option>
+<option value="OM">
+Oman
+</option>
+<option value="PK">
+ Pakistan
+</option>
+<option value="PW">
+Palau
+</option>
+<option value="PS">
+Palestinian Territories
+</option>
+<option value="PA">
+Panama
+</option>
+<option value="PG">
+Papua New Guinea
+</option>
+<option value="PY">
+Paraguay
+</option>
+<option value="PE">
+Peru
+</option>
+<option value="PH">
+Philippines
+</option>
+<option value="PN">
+Pitcairn Islands
+</option>
+<option value="PL">
+Poland
+</option>
+<option value="PT">
+Portugal
+</option>
+<option value="PR">
+Puerto Rico
+</option>
+<option value="QA">
+Qatar
+</option>
+<option value="RO">
+Romania
+</option>
+<option value="RU">
+Russia
+</option>
+<option value="RW">
+Rwanda
+</option>
+<option value="RE">
+Réunion
+</option>
+<option value="BL">
+Saint Barthélemy
+</option>
+<option value="SH">
+Saint Helena
+</option>
+<option value="KN">
+Saint Kitts and Nevis
+</option>
+<option value="LC">
+Saint Lucia
+</option>
+<option value="MF">
+Saint Martin
+</option>
+<option value="PM">
+Saint Pierre and Miquelon
+</option>
+<option value="VC">
+Saint Vincent and the Grenadines
+</option>
+<option value="WS">
+Samoa
+</option>
+<option value="SM">
+San Marino
+</option>
+<option value="SA">
+Saudi Arabia
+</option>
+<option value="SN">
+Senegal
+</option>
+<option value="RS">
+Serbia
+</option>
+<option value="SC">
+Seychelles
+ </option>
+<option value="SL">
+Sierra Leone
+</option>
+<option value="SG">
+Singapore
+</option>
+<option value="SK">
+Slovakia
+</option>
+<option value="SI">
+Slovenia
+</option>
+<option value="SB">
+Solomon Islands
+</option>
+<option value="SO">
+Somalia
+</option>
+<option value="ZA">
+South Africa
+</option>
+<option value="GS">
+South Georgia and the South Sandwich Islands
+</option>
+<option value="KR">
+South Korea
+</option>
+<option value="ES">
+Spain
+</option>
+<option value="LK">
+Sri Lanka
+</option>
+<option value="SD">
+Sudan
+</option>
+<option value="SR">
+Suriname
+</option>
+<option value="SJ">
+Svalbard and Jan Mayen
+</option>
+<option value="SZ">
+Swaziland
+</option>
+<option value="SE">
+Sweden
+</option>
+<option value="CH">
+Switzerland
+</option>
+<option value="SY">
+Syria
+</option>
+<option value="ST">
+São Tomé and Príncipe
+</option>
+<option value="TW">
+Taiwan
+</option>
+<option value="TJ">
+Tajikistan
+</option>
+<option value="TZ">
+Tanzania
+</option>
+<option value="TH">
+Thailand
+</option>
+<option value="TL">
+Timor-Leste
+</option>
+<option value="TG">
+Togo
+</option>
+<option value="TK">
+Tokelau
+</option>
+<option value="TO">
+Tonga
+</option>
+<option value="TT">
+Trinidad and Tobago
+</option>
+<option value="TN">
+Tunisia
+</option>
+<option value="TR">
+Turkey
+</option>
+<option value="TM">
+Turkmenistan
+</option>
+<option value="TC">
+Turks and Caicos Islands
+</option>
+<option value="TV">
+Tuvalu
+</option>
+<option value="UM">
+U.S. Minor Outlying Islands
+</option>
+<option value="VI">
+U.S. Virgin Islands
+</option>
+<option value="UG">
+Uganda
+</option>
+<option value="UA">
+Ukraine
+</option>
+<option value="AE">
+United Arab Emirates
+</option>
+<option value="GB">
+United Kingdom
+</option>
+<option value="US">
+United States
+</option>
+<option value="UY">
+Uruguay
+</option>
+<option value="UZ">
+Uzbekistan
+</option>
+<option value="VU">
+Vanuatu
+</option>
+<option value="VA">
+Vatican City
+</option>
+<option value="VE">
+Venezuela
+</option>
+<option value="VN">
+Vietnam
+</option>
+<option value="WF">
+Wallis and Futuna
+</option>
+<option value="EH">
+Western Sahara
+</option>
+<option value="YE">
+Yemen
+</option>
+<option value="ZM">
+Zambia
+</option>
+<option value="ZW">
+Zimbabwe
+</option>
+</select>
+</div>
+</div>
+</div>
+<div class="separator"></div>
+<span class="settings-subtitle">Languages</span>
+<div class="languages">
+<a href="index.html" title="English" class="selected">
+<div class="flag flagen"></div>
+<span>English</span>
+</a>
+<a href="https://www.instant-gaming.com/fr/panier/" title="Français">
+<div class="flag flagfr"></div>
+<span>Français</span>
+</a>
+<a href="https://www.instant-gaming.com/de/warenkorb/" title="Deutsch">
+<div class="flag flagde"></div>
+<span>Deutsch</span>
+</a>
+<a href="https://www.instant-gaming.com/es/cesta/" title="Español">
+<div class="flag flages"></div>
+<span>Español</span>
+</a>
+<a href="https://www.instant-gaming.com/it/carrello/" title="Italiano">
+<div class="flag flagit"></div>
+<span>Italiano</span>
+</a>
+<a href="https://www.instant-gaming.com/pt/carrinho/" title="Português">
+<div class="flag flagpt"></div>
+<span>Português</span>
+</a>
+<a href="https://www.instant-gaming.com/da/vogn/" title="Dansk">
+<div class="flag flagda"></div>
+<span>Dansk</span>
+</a>
+<a href="https://www.instant-gaming.com/nl/winkelwagen/" title="Nederlands">
+<div class="flag flagnl"></div>
+<span>Nederlands</span>
+</a>
+<a href="https://www.instant-gaming.com/ru/cart/" title="Русский">
+<div class="flag flagru"></div>
+<span>Русский</span>
+</a>
+<a href="https://www.instant-gaming.com/pl/koszyk/" title="Polski">
+<div class="flag flagpl"></div>
+<span>Polski</span>
+</a>
+<a href="https://www.instant-gaming.com/ua/cart/" title="Українська">
+<div class="flag flagua"></div>
+<span>Українська</span>
+</a>
+</div>
+<div class="separator"></div>
+<span class="settings-subtitle">Currencies</span>
+<div class="currencies">
+<a href="indexde9d.html?currency=EUR" rel="nofollow" title="EUR">
+<span>EUR - €</span>
+</a>
+<a href="index0307.html?currency=USD" rel="nofollow" title="USD">
+<span>USD - $</span>
+</a>
+<a href="indexbfa2.html?currency=GBP" rel="nofollow" title="GBP">
+<span>GBP - £</span>
+</a>
+<a href="index8e83.html?currency=DKK" rel="nofollow" title="DKK">
+<span>DKK - DKK</span>
+</a>
+<a href="index25cb.html?currency=CHF" rel="nofollow" title="CHF">
+<span>CHF - CHF</span>
+</a>
+<a href="index3a16.html?currency=BRL" rel="nofollow" title="BRL">
+<span>BRL - R$</span>
+</a>
+<a href="index06e8.html?currency=CAD" rel="nofollow" title="CAD">
+<span>CAD - C$</span>
+</a>
+<a href="indexa9b8.html?currency=RSD" rel="nofollow" title="RSD">
+<span>RSD - RSD</span>
+</a>
+<a href="index60cf.html?currency=CZK" rel="nofollow" title="CZK">
+<span>CZK - CZK</span>
+</a>
+<a href="index741e.html?currency=AUD" rel="nofollow" title="AUD">
+<span>AUD - A$</span>
+</a>
+<a href="index5d1e.html?currency=SEK" rel="nofollow" title="SEK">
+<span>SEK - SEK</span>
+</a>
+<a href="indexdc8f.html?currency=PLN" rel="nofollow" title="PLN">
+<span>PLN - zł</span>
+</a>
+<a class="selected" href="index3dc6.html?currency=NOK" rel="nofollow" title="NOK">
+<span>NOK - NOK</span>
+</a>
+<a href="indexc622.html?currency=AED" rel="nofollow" title="AED">
+<span>AED - د.إ</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        /* Facebook javascript */
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '252070411609330',
+                xfbml: true,
+                cookie: true,
+                version: 'v12.0'
+            });
+            FB.Event.subscribe('edge.create', function(targetUrl) {
+                if (window.dataLayer)
+                    window.dataLayer.push({ 'event':'GASocial', 'dlSocialNetwork': 'Facebook', 'dlSocialAction': 'like', 'dlSocialTarget': targetUrl });
+            });
+            FB.Event.subscribe('edge.remove', function(targetUrl) {
+                if (window.dataLayer)
+                    window.dataLayer.push({ 'event':'GASocial', 'dlSocialNetwork': 'Facebook', 'dlSocialAction': 'unlike', 'dlSocialTarget': targetUrl });
+            });
+            FB.Event.subscribe('message.send', function(targetUrl) {
+                if (window.dataLayer)
+                    window.dataLayer.push({ 'event':'GASocial', 'dlSocialNetwork': 'Facebook', 'dlSocialAction': 'send', 'dlSocialTarget': targetUrl });
+            });
+                        if (window.fbAsyncInit2) {
+                window.fbAsyncInit2();
+            }
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "../../../connect.facebook.net/en_GB/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        /* Twitter Javascript */
+        window.twttr = (function (d,s,id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+            js.src="../../../platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
+    </script>
+<script src="../../../apis.google.com/js/platform6e2a.js?onload=initGapi" defer></script>
+<div class="loginbox-register" id="loginbox-register">
+<div class="register">
+<a href="https://www.instant-gaming.com/" class="logo-ig logo-m"></a>
+<div class="signup">
+<div class="already">
+<h2>Log in</h2>
+<div class="links">
+<a href="../create-an-account/index.html" class="facebook signin-btn-fb">
+<div class="icon facebook">
+<div class="icon-facebook icon-xs"></div>
+</div>
+</a>
+<a href="../create-an-account/index.html" class="google signin-btn-google">
+<div class="icon google">
+<div class="icon-googler icon-xs"></div>
+</div>
+</a>
+<a href="../create-an-account/index.html" class="apple signin-btn-apple" data-lang="en">
+<div class="icon apple">
+<div class="icon-apple icon-xs"></div>
+</div>
+</a>
+</div>
+</div>
+<div class="create ajax-register">
+<form id="ig-register-form" action="https://www.instant-gaming.com/en/create-an-account/" method="post">
+<div class="inputs">
+<input placeholder="Your Email: (An activation link will be sent)" id="ig-email" class="ig-register-fields" name="email" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+<input placeholder="Your password:" id="ig-pass" class="ig-register-fields password" type="password" name="password" required />
+<input placeholder="First name:" id="ig-firstname" class="ig-register-fields" name="firstname" required />
+<input placeholder="Last name:" id="ig-lastname" class="ig-register-fields" name="lastname" required />
+<input placeholder="Birthdate (dd/mm/yyyy)" id="ig-birthdate" class="ig-register-fields" name="birthdate" type="text" pattern="\d\d\/\d\d/\d\d\d\d" required />
+<select class="selectable2 manual searchable" id="ig-country" name="country">
+<option value="AF">Afghanistan</option>
+<option value="AX">Aland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+ <option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BA">Bosnia and Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="BQ">British Antarctic Territory</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="VG">British Virgin Islands</option>
+<option value="BN">Brunei</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+ <option value="CC">Cocos [Keeling] Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo - Brazzaville</option>
+<option value="CD">Congo - Kinshasa</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="HR">Croatia</option>
+<option value="CU">Cuba</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="CI">Côte d’Ivoire</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG" selected="selected">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+ <option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island and McDonald Islands</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong SAR China</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IR">Iran</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Laos</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macau SAR China</option>
+<option value="MK">Macedonia</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia</option>
+<option value="MD">Moldova</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar [Burma]</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="KP">North Korea</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territories</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn Islands</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RO">Romania</option>
+<option value="RU">Russia</option>
+<option value="RW">Rwanda</option>
+<option value="RE">Réunion</option>
+<option value="BL">Saint Barthélemy</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts and Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre and Miquelon</option>
+<option value="VC">Saint Vincent and the Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+ <option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia and the South Sandwich Islands</option>
+<option value="KR">South Korea</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SD">Sudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard and Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syria</option>
+<option value="ST">São Tomé and Príncipe</option>
+<option value="TW">Taiwan</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UM">U.S. Minor Outlying Islands</option>
+<option value="VI">U.S. Virgin Islands</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US">United States</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VA">Vatican City</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Vietnam</option>
+<option value="WF">Wallis and Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+</div>
+<div class="consent darker">
+<label class="checkbox">
+<input id="ig-register-newsletter-input" type="checkbox" name="newsletter" />
+<span class="checkmark"></span>
+Receive news from IG (Big game releases, Black friday offers...)
+</label>
+ <label class="checkbox" id="ig-register-terms" for="ig-register-terms-input">
+<input id="ig-register-terms-input" type="checkbox" name="agreement" />
+<span class="checkmark"></span>
+<div>I agree with the <a href="../terms-of-use/index.html" target="_blank">Terms</a> and <a href="../privacy-policy/index.html" target="_blank">Privacy policy</a></div>
+</label>
+<label id="ig-register-parents" for="ig-register-parents-input" class="checkbox" style="display: none;">
+<input id="ig-register-parents-input" type="checkbox" name="parental_agreement" />
+<span class="checkmark"></span>
+<div>As you are underage, I confirm that I have explicit consent from my parents or tutors.<br />
+</div>
+</label>
+</div>
+<div class="alerts error ig-register-message" id="ig-register-message">
+<p id="message-email">- Enter a valid email please, you will need it to log in</p>
+<p id="message-pass">- Password must be at least 6 characters</p>
+<p id="message-firstname">- Enter your firstname</p>
+<p id="message-lastname">- Enter your lastname</p>
+<p id="message-birthdate">- Please enter your birthdate</p>
+<p id="message-country">- Please choose your country</p>
+<p id="message-agreement">- You have to agree with the terms and privacy policy</p>
+<p id="message-parents">- As you are underage, you have to confirm that you have explicit consent from your parents or tutors.</p>
+</div>
+<div id="ig-register-error-container" class="ig-register-error-container alerts error"></div>
+<button id="ajax-register-btn" class="g-recaptcha button disabled" data-sitekey="6LcAtSoUAAAAAPGaTTvQstuQa4RwcuPVYMdNUxt6" data-callback="registerFormSubmit">
+Submit
+</button>
+<input id="ig-register-once" type="hidden" value="" />
+<input type="hidden" name="process" value="register" />
+<input type="hidden" name="usid" value="1d9e57a33eb747f6b21a33cb7fab6742" />
+<input type="hidden" name="did" />
+<input type="hidden" name="is_ajax_response" value="1" />
+</form>
+<a class="manual" id="register-manual">« Back</a>
+</div>
+</div>
+<div class="login already">
+<div class="login-separator">
+<span>or</span>
+</div>
+<form class="ig-login-form" action="https://www.instant-gaming.com/en/" method="post">
+<input class="opacity" type="email" name="email" placeholder="Email" required />
+<input class="opacity" type="password" name="password" placeholder="*********" required />
+<input type="hidden" name="usid" value="1d9e57a33eb747f6b21a33cb7fab6742" />
+<input type="hidden" name="process" value="login" />
+<input type="hidden" name="ajax" value="true" />
+<input class="button" type="submit" value="OK" />
+</form>
+<div class="forgot">
+<a class="manual" id="register-manual">
+No account yet?
+</a>
+<a href="../lost-password/index.html">Lost password?</a>
+</div>
+</div>
+</div>
+<div class="wallpaper"></div>
+</div>
+<script type="text/javascript">
+    window.IG_APPLE_INIT = {
+                clientId: 'com.instant-gaming.connect',
+                scope: 'name email',
+        redirectURI: 'https://www.instant-gaming.com/en/sign-in/apple/',
+        state: '28240d2a54',
+        nonce: '1d9e57a33eb747f6b21a33cb7fab6742',
+        usePopup: true
+    }
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"548e8d9732","applicationID":"6048502","transactionName":"ZFMHY0RUWxcAV0VbCV0ZJkJFQVoJTldQQBJjVwJS","queueTime":0,"applicationTime":532,"atts":"SBQEFQxOSBk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.instant-gaming.com/en/cart/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Nov 2022 21:18:34 GMT -->
+</html>
